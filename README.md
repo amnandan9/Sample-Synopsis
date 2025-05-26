@@ -15,20 +15,6 @@ This synopsis presents a proactive cybersecurity model powered by artificial int
 
 ---
 
-## 🗂️ Project Structure
-
-📦 leora-prism/
-├── main.tex           # Main LaTeX source file
-├── references.bib     # Bibliography (BibTeX) file
-├── sections/          # Optional modular sections
-│   ├── intro.tex      # Introduction section
-│   ├── problem.tex    # Problem formulation
-│   └── tools.tex      # Tools and technologies
-├── images/            # Figures and diagrams
-├── output.pdf         # Final compiled synopsis (optional)
-└── README.md          # This file
----
-
 ## ⚙️ Tools & Technologies
 
 - 📚 **LaTeX** – for document preparation
@@ -55,3 +41,17 @@ This synopsis presents a proactive cybersecurity model powered by artificial int
 ```bash
 git clone [https://github.com/amnandan9/Sample-Synopsis.git]
 cd Sample-Synopsis
+
+```
+## 🗂️ Project Structure
+📦 leora-prism/
+```bash
+├── main.tex           # Main LaTeX source file
+├── references.bib     # Bibliography (BibTeX) file
+├── sections/          # Optional modular sections
+│   ├── intro.tex      # Introduction section
+│   ├── problem.tex    # Problem formulation
+│   └── tools.tex      # Tools and technologies
+├── images/            # Figures and diagrams
+├── output.pdf         # Final compiled synopsis (optional)
+└── README.md          # This file
