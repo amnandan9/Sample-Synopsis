@@ -17,16 +17,21 @@ This synopsis presents a proactive cybersecurity model powered by artificial int
 
 ## 🗂️ Project Structure
 
+\noindent The following is the folder structure for the \textbf{Leora Prism} LaTeX synopsis project:
+
+\begin{verbatim}
 📦 leora-prism/
-├── main.tex # Main LaTeX source file
-├── references.bib # Bibliography (BibTeX) file
-├── sections/ # Optional modular sections
-│ ├── intro.tex
-│ ├── problem.tex
-│ └── tools.tex
-├── images/ # Figures and diagrams
-├── output.pdf # Final compiled synopsis (optional)
-└── README.md # This file
+├── main.tex             # Main LaTeX source file
+├── references.bib       # Bibliography (BibTeX) file
+├── sections/            # Optional modular sections
+│   ├── intro.tex
+│   ├── problem.tex
+│   └── tools.tex
+├── images/              # Figures and diagrams
+├── output.pdf           # Final compiled synopsis (optional)
+└── README.md            # This file
+\end{verbatim}
+
 
 ---
 
