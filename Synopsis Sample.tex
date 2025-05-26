@@ -1,0 +1,369 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{textalpha}
+\usepackage{graphicx}  % For including images
+\usepackage{subcaption} % For subfigures with individual captions
+\usepackage{float}      % For H float positioning
+
+\geometry{a4paper, margin=1in}
+\setstretch{1.5}
+
+% Colors
+\definecolor{maroon}{RGB}{128, 0, 0}
+\definecolor{lightmaroon}{RGB}{200, 150, 150}
+
+% Header/Footer Setup with double maroon lines
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{\textcolor{lightmaroon}{Sample Title}}}
+\fancyfoot[L]{\textbf{Dept of CSE, Sample}}
+%\fancyfoot[C]{\textbf{2024--25}}
+\fancyfoot[R]{\textbf{Page \thepage}}
+
+% Maroon double lines for header and footer
+\renewcommand{\headrule}{%
+  {\color{maroon}\hrule height 0.4pt \vspace{1pt}%
+   \hrule height 1.2pt}%
+}
+\renewcommand{\footrule}{%
+  {\color{maroon}\hrule height 0.4pt \vspace{1pt}%
+   \hrule height 1.2pt}%
+}
+
+% Custom section formatting
+\titleformat{\section}
+  {\normalfont\fontsize{14}{16}\bfseries\selectfont}
+  {\thesection}
+  {1em}
+  {}
+  
+% Special format for centered sections
+\newcommand{\centersection}[1]{%
+  \begin{center}
+    \fontfamily{ptm}\fontsize{14}{16}\selectfont\bfseries\uppercase{#1}
+  \end{center}
+}
+
+\begin{document}
+
+% Title Page (if needed)
+%\begin{center}
+  %  \fontfamily{ptm}\fontsize{16}{18}\selectfont\bfseries 
+ %   Cyber Threat Detection: A Next-Gen AI System for Proactive Threat Detection and User Behavior Analysis
+%\end{center}
+
+% ABSTRACT
+\centersection{ABSTRACT}
+
+\fontfamily{ptm}\fontsize{12}{14}\selectfont
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+% Table of Contents Page
+\newpage
+\centersection{TABLE OF CONTENTS}
+
+\fontfamily{ptm}\fontsize{12}{14}\selectfont
+\begin{spacing}{1.0}
+\vspace{0.5cm}
+
+\begin{tabular}{@{} p{0.8\textwidth} r @{}}
+\textbf{1. INTRODUCTION} & \textbf{4} \\
+\vspace{0.2cm} & \\
+
+\textbf{2. PROBLEM IDENTIFICATION} & \textbf{6} \\
+\vspace{0.1cm} & \\
+\hspace{1em}2.1. Core Problem Statement & 6 \\
+\vspace{0.1cm} & \\
+\hspace{1em}2.2.  Related Problems and Brief Solutions & 6 \\
+\vspace{0.1cm} & \\
+\hspace{1em}2.3. Increasing Threat Complexity and Volume of Threats Analysis & 7 \\
+\vspace{0.1cm} & \\
+\hspace{1em}2.4. Limited Integration and Critical Analysis & 7 \\
+\vspace{0.2cm} & \\
+
+\textbf{3. OBJECTIVES} & \textbf{8} \\
+\vspace{0.1cm} & \\
+\hspace{1em}3.1. Real-time Detection Goals & 8 \\
+\vspace{0.1cm} & \\
+\hspace{1em}3.2. Security Coverage Targets & 9 \\
+\vspace{0.1cm} & \\
+\hspace{1em}3.3. System Performance Metrics & 9 \\
+\vspace{0.2cm} & \\
+
+\textbf{4. HYPOTHESIS} & \textbf{10} \\
+\vspace{0.1cm} & \\
+\hspace{1em}4.1. AI Effectiveness Hypothesis & 10 \\
+\vspace{0.1cm} & \\
+\hspace{1em}4.2. Threat Intelligence Impact & 11 \\
+\vspace{0.1cm} & \\
+\hspace{1em}4.3. Automation Benefits & 11 \\
+\end{tabular}
+
+\newpage
+\begin{tabular}{@{} p{0.8\textwidth} r @{}}
+\textbf{5. SCOPE} & \textbf{12} \\
+\vspace{0.1cm} & \\
+\hspace{1em}5.1. Detection Algorithms & 12 \\
+\vspace{0.1cm} & \\
+\hspace{1em}5.2. User Behavior Analytics & 13 \\
+\vspace{0.1cm} & \\
+\hspace{1em}5.3. Data Integration Methods & 13 \\
+\vspace{0.2cm} & \\
+
+\textbf{6. DATA COLLECTION} & \textbf{14} \\
+\vspace{0.1cm} & \\
+\hspace{1em}6.1. Primary Data Sources & 14 \\
+\vspace{0.1cm} & \\
+\hspace{1em}6.2. Secondary Data Sources & 15 \\
+\vspace{0.2cm} & \\
+
+\textbf{7. RESEARCH TOOLS} & \textbf{16} \\
+\vspace{0.1cm} & \\
+\hspace{1em}7.1. Machine Learning Libraries & 16 \\
+\vspace{0.1cm} & \\
+\hspace{1em}7.2. Network Analysis Tools & 16 \\
+\vspace{0.1cm} & \\
+\hspace{1em}7.3. Monitoring Stack & 16 \\
+\vspace{0.2cm} & \\
+
+\textbf{8. CHAPTERIZATION} & \textbf{17} \\
+\vspace{0.1cm} & \\
+\hspace{1em}8.1. Report Structure Overview & 17 \\
+\vspace{0.2cm} & \\
+
+\textbf{REFERENCES} & \textbf{18} \\
+\end{tabular}
+\end{spacing}
+\newpage
+% CHAPTER 1
+\section*{CHAPTER 1}
+\centersection{INTRODUCTION}
+
+\fontfamily{ptm}\fontsize{12}{14}\selectfont
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+% CHAPTER 2
+\section*{CHAPTER 2}
+\centersection{PROBLEM IDENTIFICATION AND PROBLEM FORMULATION}
+
+\fontfamily{ptm}\fontsize{12}{14}\selectfont
+\textbf{Core Area of Problem:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Related Problems and Brief Solutions:}
+
+\textbf{Increasing Threat Complexity:}Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Volume of Threats:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Limited Integration:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Prior Studies and Their Findings (Critical Analysis):} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\newpage % Page break before next major section
+% CHAPTER 3
+\section*{CHAPTER 3}
+\centersection{OBJECTIVE OF STUDY}
+\fontfamily{ptm}\fontsize{12}{14}\selectfont
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Real-time Threat Detection:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Comprehensive Security Coverage:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Automated Monitoring and Analysis:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Intuitive User Interface:} To develop a user-friendly dashboard that provides real-time threat visualizations (e.g., interactive network maps, threat timelines), customizable alerts (based on severity, type, and target), and comprehensive reporting capabilities (including incident summaries, trend analysis, and compliance reports). The UI will be designed with a focus on usability and will incorporate feedback from security analysts.
+
+\textbf{High System Performance:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Significant Business Impact:} To contribute to a measurable reduction in the number of successful security incidents (a reduction of at least 50 within the first year of deployment), improve the average threat response time (a reduction of at least 70 in the time taken to identify and contain security incidents), and achieve tangible cost savings in security operations (a reduction of at least 40 in operational expenses related to threat monitoring and incident response through automation).
+
+\textbf{Seamless Integration:}Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Scalability:}Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Compliance with Security Standards:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Reliable System Maintenance:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+% CHAPTER 4
+\section*{CHAPTER 4}
+\centersection{HYPOTHESIS}
+\fontfamily{ptm}\fontsize{12}{14}\selectfont
+The central hypotheses to be rigorously tested throughout the research and development process are further defined:
+
+% Option 1: Force placement with float package
+%\begin{figure}[H]
+%    \centering
+%   \includegraphics[width=0.85\textwidth]{structure}
+%   \caption{System architecture of the Cyber Threat Detection platform}
+%    \label{fig:arch}
+%\end{figure}
+
+\textbf{Hypothesis 1:} 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.$\alpha = 0.05$.
+
+\textbf{Hypothesis 2:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+% Option 1: Force placement with float package
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.85\textwidth]{data_flow}
+%    \caption{System architecture of the Cyber Threat Detection platform}
+ %   \label{fig:arch}
+%\end{figure}
+\textbf{Hypothesis 3:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Hypothesis 4:}Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\newpage % Page break before next major section
+
+\section*{CHAPTER 5}
+\centersection{SCOPE OF STUDY}
+
+\fontfamily{ptm}\fontsize{12}{14}\selectfont
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Threat Detection Techniques (Specific Algorithms):} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{User Behavior Analytics (Specific Metrics):} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Data Sources and Integration (Specific APIs and Formats):} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\newpage % Page break before next major section
+\section*{CHAPTER 6}
+\centersection{Data Collection }
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\textbf{Primary Data Sources (In-depth Description):}\\
+\textbf{Network Traffic Data:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\\
+\textbf{System Logs:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\
+\textbf{User Activity Data:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\
+\textbf{Secondary Data Sources (In-depth Description):}\\
+\textbf{Threat Intelligence Feeds:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum:
+VirusTotal API:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\textbf{Publicly Available Datasets:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\newpage % Page break before next major section
+
+\section*{CHAPTER 7}
+\centersection{RESEARCH TOOL APPLIED}
+\fontfamily{ptm}\fontsize{12}{14}\selectfont
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+TensorFlow and PyTorch: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\
+\textbf{Network Analysis Tools:}
+Scapy and PyShark: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Wireshark:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Threat Intelligence API: VirusTotal API will be integrated to leverage its vast database of malware and threat intelligence information. The API will be used to enrich collected data with threat intelligence and improve detection accuracy.
+Web Scraping Library: BeautifulSoup4 will be used for extracting information from websites for phishing detection and analysis. This will involve identifying potential phishing sites and extracting their content for analysis.
+Big Data Technologies:
+Apache Spark: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\
+\textbf{Monitoring Stack:}
+Prometheus: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Grafana: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\newpage % Page break before next major section
+
+\section*{CHAPTER 8}
+\centersection{CHAPTERIZATION}
+\fontfamily{ptm}\fontsize{12}{14}\selectfont
+labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.:\\
+1.	Introduction: labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\\
+2.	Literature Review: labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\\
+3.	Methodology: labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\\
+4.	System Design and Implementation: labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\\
+5.	Experimental Setup and Evaluation: labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\\
+6.	Results and Analysis:labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\\
+7.	Discussion: labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\\
+8.	Conclusion: labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\\
+9.	References and Bibliography: labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\\
+10.	Appendices (if applicable):labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+\newpage % Page break before next major section
+
+% CHAPTER 9
+\centersection{REFERENCES}
+
+{\fontfamily{ptm}\fontsize{8}{10}\selectfont
+[1] A. Krizhevsky, I. Sutskever, and G. E. Hinton, \textit{"ImageNet Classification with Deep Convolutional Neural Networks"}, Advances in Neural Information Processing Systems, vol. 25, pp. 1097--1105, 2012.
+
+[2] J. Hochreiter and J. Schmidhuber, \textit{"Long Short-Term Memory"}, Neural Computation, vol. 9, no. 8, pp. 1735--1780, 1997.
+
+[3] VirusTotal, \textit{"VirusTotal API v3.0 Documentation"}, 2023. Available: \url{https://developers.virustotal.com/reference}
+
+[4] Prometheus Authors, \textit{"Prometheus: Monitoring System \& Time Series Database"}, 2023. Available: \url{https://prometheus.io/docs/}
+
+[5] Grafana Labs, \textit{"Grafana Documentation"}, 2023. Available: \url{https://grafana.com/docs/}
+
+[6] A. Vaswani et al., \textit{"Attention Is All You Need"}, Advances in Neural Information Processing Systems, vol. 30, 2017.
+
+[7] M. Kuhn and K. Johnson, \textit{Applied Predictive Modeling}, New York: Springer, 2013.
+
+[8] NIST, \textit{"Guide to Cyber Threat Information Sharing"}, NIST Special Publication 800--150, 2016.
+
+[9] MITRE, \textit{"MITRE ATT\&CK Framework"}, 2023. Available: \url{https://attack.mitre.org/}
+
+[10] F. Pedregosa et al., \textit{"Scikit-learn: Machine Learning in Python"}, Journal of Machine Learning Research, vol. 12, pp. 2825--2830, 2011.
+
+[11] Y. LeCun, Y. Bengio, and G. Hinton, \textit{"Deep Learning"}, Nature, vol. 521, no. 7553, pp. 436--444, 2015.
+
+[12] Elastic, \textit{"The Elasticsearch Handbook"}, 2023. Available: \url{https://www.elastic.co/guide/}
+
+[13] R. Sommer and V. Paxson, \textit{"Outside the Closed World: On Using Machine Learning for Network Intrusion Detection"}, IEEE Symposium on Security and Privacy, pp. 305--316, 2010.
+
+[14] Django Software Foundation, \textit{"Django Documentation"}, 2023. Available: \url{https://docs.djangoproject.com/}
+
+[15] L. Breiman, \textit{"Random Forests"}, Machine Learning, vol. 45, no. 1, pp. 5--32, 2001.
+
+[16] ISO/IEC, \textit{"Information technology - Security techniques - Information security management systems - Requirements"}, ISO/IEC 27001:2013.
+
+[17] T. Mikolov et al., \textit{"Efficient Estimation of Word Representations in Vector Space"}, arXiv:1301.3781, 2013.
+
+[18] OWASP, \textit{"OWASP Top Ten"}, 2021. Available: \url{https://owasp.org/www-project-top-ten/}
+
+[19] J. Devlin et al., \textit{"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"}, NAACL-HLT, 2019.
+
+[20] PCI Security Standards Council, \textit{"PCI DSS v4.0"}, 2022. Available: \url{https://www.pcisecuritystandards.org/}
+}
+
+\end{document}
