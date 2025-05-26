@@ -1,5 +1,5 @@
 <h1 align="center">📘 Leora Prism</h1>
-<p align="center"><i>Cyber Threat Detection: A Next-Gen AI System for Proactive Threat Detection and User Behavior Analysis</i></p>
+<p align="center"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/format-LaTeX-blueviolet?style=flat-square" alt="Format">
@@ -11,8 +11,7 @@
 
 ## 🧾 Abstract
 
-This synopsis presents a proactive cybersecurity model powered by artificial intelligence and behavioral analytics. It aims to move beyond traditional reactive security frameworks by using real-time user behavior monitoring and machine learning techniques to detect anomalies and threats before damage occurs.
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ---
 
 ## ⚙️ Tools & Technologies
